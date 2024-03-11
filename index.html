@@ -1,159 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="stylePage" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend basic</title>
-    <style>
-        form{
-            border: 1px solid black;
-            padding: 10px;
-            margin: 10px;
-            text-align: center;
-            background-color:#628198 ;            
-        }
-        label{
-            display:block ;
-            font-size:x-large;
-            font-weight: bold;
-            font-style: italic;
-            /* color: #eeff33da; */
-            color: #7e1212;
-            }
-
-        input{
-            font-size: medium;
-            /* color: tomato; */
-            border-bottom: 1px solid black;
-           font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-           text-align: center;
-        } 
-
-        .button-done {
-        align-items: center;
-        appearance: none;
-        background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
-        border: 0;
-        border-radius: 6px;
-        box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
-        box-sizing: border-box;
-        color: #fff;
-        cursor: pointer;
-        display: inline-flex;
-        font-family: "JetBrains Mono",monospace;
-        height: 48px;
-        justify-content: center;
-        line-height: 1;
-        list-style: none;
-        overflow: hidden;
-        padding-left: 16px;
-        padding-right: 16px;
-        position: relative;
-        text-align: left;
-        text-decoration: none;
-        transition: box-shadow .15s,transform .15s;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        white-space: nowrap;
-        will-change: box-shadow,transform;
-        font-size: 18px;
-        }
-
-        .button-done:focus {
-        box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-        }
-
-        .button-done:hover {
-        box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-        transform: translateY(-2px);
-        }
-
-        .button-done:active {
-        box-shadow: #3c4fe0 0 3px 7px inset;
-        transform: translateY(2px);
-        }
-        
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-     <a href="index.html">Home page </a>  
-     <a href="secondPage.html">second page </a>  
-     <a href="thirdPage.html">third page </a>  
-    <h1>This is heading 1</h1>
-    <h2>This is heading 2</h2>
-    <h3>This is heading 3</h3>
+    <!-- navbar div -->
+    <div class="navBar">
+        <div class="buttonDiv">
+            <a href="index.html" ><button class="navButtons">HOME</button></a>
+            <a href="Pages/contentPage.html"><button class="navButtons">CONTENT</button></a>
+            <a href="Pages/aboutPage.html"><button class="navButtons">ABOUT US</button></a>
+            <a href="Pages/loginPage.html"> <button class="navButtons">LOGIN</button></a>
+        </div>
+    </div>
 
-    <p>This is a paragraph.</p>
-    <p>This is another paragraph.</p>   
-    <p>also this is a  paragraph</p>
-    <button>Click me</button>
-    <br>
-    <img src="https://www.jordanyp.com/img/jo/e/1414922830-solution-development-kit-sdk.png" >
-    <br>
-    <img src="cactus_flowers_plants.jpg" alt="cactus_flowers_plants" width="250" >
-    <br>
-    <p>hi  <b>this is a bold text</b></p>
-    <p>hi  <strong>this is a strong tex</strong></p>
-    <p>hi  <em>this is a em text</em></p>
-    <p>hi  <mark>this is a mark text</mark></p>
-    <p>hi  <small>this is a small text</small></p>
-    <p>hi  <del>this is a del text</del></p>
-    <p>hi  <ins>this is a ins text</ins></p>
-    <p>hi  <sub>this is a sub text</sub></p>
-    <p>hi  <sup>this is a sup text</sup></p>
+    <!-- contant div -->
+    <div class="content">
+        <h1 id="header1">WELCOME</h1>
+        <h2 id="header2">HOW WE CAN HELP YOU?</h2>
+        <p id="par1">
+                CSS (Cascading Style Sheets) and HTML (HyperText Markup Language) are 
+                the dynamic duo powering the visual and structural aspects of virtually 
+                every webpage on the internet. HTML serves as the backbone, providing 
+                the structural framework for content through tags like div, p, and header. 
+                Meanwhile,CSS comes into play, adding the style and aesthetics, enhancing the presentation
+                with colors, layouts, and typography. With CSS, designers can manipulate elements'
+                appearance, positioning, and behavior, bringing life to static HTML. Together, 
+                they form a symbiotic relationship, allowing developers to craft visually stunning 
+                and user-friendly websites that engage and captivate audiences across the
+                digital landscape.
+            </p>   
+            
+    </div>
 
-
-    <a href="https://www.google.com">This is a link open in the same tap</a><br>
-    <a href="https://www.google.com" target="_blank">This is a link open in a new tap</a>
-    <br>
-
-    <form>
-        <p style="color: #812a2f; font-size: xx-large; border-bottom: 1px solid black;">Basic form using - [html&css] </p>
-        <br>
-        <label for="name" >Name:&nbsp </label>
-        <input type="text" id="name" name="name" placeholder="Please enter your name" >
-        <br>
-        <br>
-        <label for="email" >Email: </label> 
-        <input type="email" id="email" name="email" placeholder="Please enter your email" >
-        <br>
-        <br>
-        <label for="password" >password: </label> 
-        <input type="password" id="password" name="password" placeholder="Please enter your password" >
-        <br>
-        <br>
-        <label for="phone" >phone: </label> 
-         <input type="tel" id="phone" name="phone" placeholder="Please enter your phone" > <!--required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" -->
-        <br>
-        <br>
-        <label for="date" >date: </label> 
-        <input type="date" id="date" name="date" >
-        <br>
-        <br>
-        <label for="time" >time: </label> 
-        <input type="time" id="time" name="time" >
-        <br>
-        <br>
-        <label for="color" >color: </label> 
-        <input type="color" id="color" name="color" >
-        <br>
-        <br>
-        <label for="file" >file: </label> 
-        <input type="file" id="file" name="file" >
-        <br>
-        <br>
-        
-        <label for="number" >number: </label> 
-        <input type="number" id="number" name="number" >
-        
-        <label for="url" >url: </label> 
-        <input type="url" id="url" name="url" >
-        
-        <br>
-        <br>
-        <button class="button-done">Submit</button>
-    </form>
+    <!-- footer div -->
+    <div class="footer">
+        <hr>
+        <p id="par2">
+            🌟 Connect with us on social media: Follow us 
+                on Twitter, like our Facebook page, and subscribe
+                to our YouTube channel for the latest updates
+                and exclusive content. 📱💻 Stay in the loop
+                and be part of our growing community! For any
+                inquiries or feedback, feel free to reach out
+                to our friendly support team at
+                support@example.com. © 2024 Example Website.
+                All rights reserved. Made with ❤️ by the Example Team.]
+        </p>
+    </div>
+    
+    
 
 </body>
 </html>
