@@ -14,7 +14,7 @@
     height:150%;
     background-position: center center;
     background-attachment: fixed; 
-    background-image: url(../3.jpg) ;
+    background-image: url(../../3.jpg) ;
 
     
 }
@@ -68,6 +68,11 @@
 #nextButton{
     position: fixed;
     right: 0;
+    bottom: 0;
+}
+#backButton{
+    position: fixed;
+    left: 0;
     bottom: 0;
 }
 .img{
