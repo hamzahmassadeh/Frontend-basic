@@ -5,15 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend basic</title>
     <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-down.css' rel='stylesheet'><body>
     <!-- navbar div -->
     <div class="navBar">
         <div class="buttonDiv">
-            <a href="index.html" ><button class="navButtons">HOME</button></a>
-            <a href="Pages/contentPage.html"><button class="navButtons">CONTENT</button></a>
+            <a href="index.html" ><button class="navButtons">HOME</button></a>            
             <a href="Pages/aboutPage.html"><button class="navButtons">ABOUT US</button></a>
             <a href="Pages/loginPage.html"> <button class="navButtons">LOGIN</button></a>
+           
+            <div class="dropdown">
+                <button class="navButtons"> TASKS      
+                    <i class="gg-chevron-down"></i>               
+                </button>
+                
+                <div class="dropdown-options">                    
+                    <a href="task/task3/task3.html" class="taskButtons">Task3</a>
+                    <a href="task/task4/task4.html" class="taskButtons">Task4</a>
+                </div>
+              </div>
         </div>
     </div>
 
@@ -48,11 +57,11 @@
                 inquiries or feedback, feel free to reach out
                 to our friendly support team at
                 support@example.com. © 2024 Example Website.
-                All rights reserved. Made with ❤️ by the Example Team.]
+                All rights reserved. Made with ❤️ by the Example Team.
         </p>
     </div>
     
     
-
+    <script src="index.js"></script>
 </body>
 </html>
