@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" class="pageStyle">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foody story</title>
+    <title>Foody store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <section id="navBar">
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" width="75px" height="75px" ></a>
+              <div class="logo" >
+                <a  id="F" href="index.html">
+                  <img src="media/F.png" alt="F"  >
+                </a>
+                <a  id="oodi" href="index.html">
+                  <img src="media/oodi.png" alt="oodi"  >
+                </a>
+              </div>
+
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#" style="color: #39DB4A;">Home</a>
                   </li>
-                  <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li> -->
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Menu
+                  
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle active" class="bi bi-chevron-down" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu   
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -36,7 +43,7 @@
                   </li>
                   
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Services
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -51,18 +58,21 @@
                   </li>
                 </ul>
                 <form class="d-flex">
-                    <a href="#" class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <a href="#" id="searchIcon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                       <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                       </svg>
                     </a>
-                    <a href="#" class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                    <a href="#" id="bagIcon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
                       <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
                       </svg>
                     </a>
                     <a href="#" class="contactBut">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16" style="margin: 4%;">
                       <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-                      </svg>contact
+                      </svg>
+                      contact
                     </a>
                 </form>
               </div>
@@ -72,20 +82,25 @@
 
 
     <section id="content">
-      <div class="content">
+      <div class="firstGrid">
         <!-- the right half of content -->
-        <div>
+        <div id="leftGrid">
           <!-- the 2 paragraphs   -->
-          <h1 class="firstPar">Dive into Delights Of Delectable <span style="color: #39DB4A;">Food</span></h1>
-          <p class="secondPar">Where Each Plate Weaves a Story of Culinary Mastery and Passionate Craftsmanship</p>
-          
+          <h1 class="firstPar">Dive into Delights <br> Of Delectable 
+            <span style="color: #39DB4A;">
+              Food
+            </span>
+          </h1>
+          <p class="secondPar">
+            Where Each Plate Weaves a Story of Culinary Mastery<br> and Passionate Craftsmanship
+          </p>          
           <!-- the first 2 buttons with play icon  -->
-          <div>
+          <div id="rightButtons">
             <a href="#" class="orderBut">
               Order Now
             </a>
             <a href="#" id="vidText" >Watch Video</a>
-            <button class="icon">
+            <button class="playIcon">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16" >
                 <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
               </svg>
@@ -93,23 +108,125 @@
           </div>
         </div>
         <!-- the left half of content -->
-        <div>
-          <img src="images/img.png" class="rounded float-end" alt="foodImage">
+        <div id="RightGrid">   
+          <div id="rightImage">
+            <p id="backgroundWomanImage"></p>
+            <img src="media/Hot spicy Food.png" id="cloudImage" alt="Hot spicy Food">
+            <img src="media/woman.png" id="womanImage" alt="womanImage">            
+          </div>          
           <!-- the links under the photo -->
-          <div class="floatButton">
-            <button  class="button-47">
-              <img src="images/pizza.jpg" alt="pizza" width="50" height="50" style="border-radius: 5px; margin: 2%;">
-              italian pizza
-            </button>
-
-            <button  class="button-47">
-              <img src="images/salad1.jpg" alt="pizza" width="50" height="50" style="border-radius: 5px; margin: 2%;">
-              Vegetarian salad
-            </button>
-          </div>
-          
+          <div class="rightGridButton">
+            <dic class="rightGridButtonContent">
+              <a href="#" style="margin: 0;">
+                <img src="media/Spicy noodles.png" alt="Spicy noodles" class="firstFoodImage">
+              </a>
+              <div style="margin-top: 2px ; ">
+                <a href="#" style=" text-decoration: none; color: black;">
+                  <h6 style="margin: 0;">Spicy noodles</h6>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <p style="color: red; margin: 0  ;">
+                    $
+                    <span style="font-weight: bold; font-size: 15px; color: rgba(0, 0, 0, 0.658); margin-bottom: 0px;">
+                      18.00
+                    </span>
+                  </p>   
+                </a>             
+              </div>
+            </dic>
+            <dic class="rightGridButtonContent">
+              <a href="#" style="margin: 0;">
+                <img src="media/Vegetarian salad.png" alt="Vegetarian salad" class="firstFoodImage">
+              </a>
+              <div style="margin: 2px 0px; ">
+                <a href="#" style=" text-decoration: none; color: black; margin: 0;">
+                  <h6 style="margin: 0;">Vegetarian salad</h6>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star "></span>
+                    <p style="color: red; margin: 0;">
+                      $
+                      <span style="font-weight: bold; font-size: 15px; color: rgba(0, 0, 0, 0.658);">
+                        23.00
+                      </span>
+                  </p>  
+                </a>              
+              </div>              
+            </dic>    
+          </div>          
         </div>    
       </div>
+    </section>
+
+    <section id="secondPage">
+
+      <div style="margin-top:1%; margin-bottom: 5%;">
+        <p style="color: #FF6868; font-size: 20px; font-weight: bold; font-family:'Courier New', Courier, monospace ;">Customer Favorites</p>
+        <h1 style="font-weight: bold; color: black; font-size: 50px;">Popular Catagories</h1>
+      </div>
+      
+      <div id="secondGrid">
+
+        <button class="secondGridButton">
+        <div >
+          <div class="test">
+            <img src="media/background2.png" alt="background2.png" class="buttonBackground">
+            <img src="media/Main Dish.png" alt="Main Dish" class="secondFoodImages">
+          </div>
+          <h3>Main Dish</h3>
+          <h5 style="margin-bottom: 25px; color: rgba(0, 0, 0, 0.749);">(86 dishes)</h5>
+        </div>
+      </button>
+
+      <button class="secondGridButton">
+        <div >
+          <div class="test">            
+            <img src="media/background2.png" alt="background2.png" class="buttonBackground">
+            <img src="media/Break Fast.png" alt="Break Fast" id="img2">
+          </div>
+          <h3>Break Fast</h3>
+          <h5 style="margin-bottom: 25px; color: rgba(0, 0, 0, 0.749);">(12 break fast)</h5>
+        </div>
+      </button>
+
+
+      <button class="secondGridButton">
+        <div >
+          <div class="test">            
+            <img src="media/background2.png" alt="background2.png" class="buttonBackground">
+            <img src="media/Dessert.png" alt="Dessert" id="img3">
+          </div>
+          <h3>Dessert</h3>
+          <h5 style="margin-bottom: 25px; color: rgba(0, 0, 0, 0.749);">(48 dessert)</h5>
+        </div>
+      </button>
+
+        <button class="secondGridButton">
+          <div>
+            <div class="test">
+              <img src="media/background2.png" alt="background2.png" class="buttonBackground">
+              <img src="media/Browse All.png" alt="Browse All" id="img4">
+            </div>
+            <h3>Browse All</h3>
+            <h5 style="margin-bottom: 25px; color: rgba(0, 0, 0, 0.749);">(255 Items)</h5>
+          </div>
+        </button>
+        
+        
+        
+        
+
+      </div>
+      
+
+
+
+
     </section>
 
 
