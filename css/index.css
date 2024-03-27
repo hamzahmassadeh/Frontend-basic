@@ -155,7 +155,7 @@ body{
 .playIcon{    
     border: 0;
     padding: 2.2%;
-    text-align: center;
+    /* text-align: center; */
     border-radius: 50%;
     background-color: white;
     color: rgba(0, 0, 0, 0.825);
@@ -196,6 +196,18 @@ body{
     color: gold;
     
 }
+.dolar{
+    color: red; 
+    margin: 0  ;
+}
+.price{
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.658);
+}
+.foodName{
+    margin: 0;    
+}
 /***************************second grid***********************************/
 #secondPage{
     margin: 10% auto;    
@@ -218,7 +230,7 @@ body{
     border-radius: 25px;
     box-shadow: 0 4px 20px 8px rgba(0, 0, 0, 0.145), 0 2px 4px -1px rgba(0, 0, 0, 0.123);
 }
-.test  {
+.buttonImageAndBackground{
     position: relative;
     margin-bottom:110px ;
 }
@@ -229,7 +241,7 @@ body{
     width: 100px;
     margin-left: -52px;   
 }
-.secondFoodImages{
+#img1{
     position: absolute;
     width: 100px;
     /* height: 90%; */
@@ -261,23 +273,25 @@ body{
     margin-left: -37px;
     margin-top: 7px;
 }
-/* *********************************************** */
-/* @media screen and (min-width: 480px) {
-    .rounded{
-        width: 50%;
-    }
-  } */
+#customerFavorites{
+    color: #FF6868; 
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family:'Courier New', 
+    Courier, monospace ;
+}
+#popularCatagories{
+    font-weight: bold;
+    color: black; 
+    font-size: 50px;
+}
+.foodName2{
+    /* font-size:20px;  */
+    /* font-weight: bold; */
+}
+.catagoriesNum{
+    margin-bottom: 25px; 
+    color: rgba(0, 0, 0, 0.749);
+}
 
-  /* @media (min-width:769px) {
-    .img-move {
-    position:absolute;
-    width:55%;
-}
-.img-move-1 {
-    left:0;
-}
-.img-move-2 {
-    right: 0;  
-    bottom:0;
-}
-}  */
+ 

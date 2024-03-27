@@ -6,6 +6,10 @@
     <title>Foody store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media500px.css">
+    <link rel="stylesheet" href="css/media.css">
+    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -101,7 +105,7 @@
             </a>
             <a href="#" id="vidText" >Watch Video</a>
             <button class="playIcon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi2 bi-play-fill" viewBox="0 0 16 16" >
                 <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
               </svg>
             </button>
@@ -113,24 +117,27 @@
             <p id="backgroundWomanImage"></p>
             <img src="media/Hot spicy Food.png" id="cloudImage" alt="Hot spicy Food">
             <img src="media/woman.png" id="womanImage" alt="womanImage">            
-          </div>          
+          </div>  
+                  
           <!-- the links under the photo -->
           <div class="rightGridButton">
             <dic class="rightGridButtonContent">
               <a href="#" style="margin: 0;">
                 <img src="media/Spicy noodles.png" alt="Spicy noodles" class="firstFoodImage">
               </a>
-              <div style="margin-top: 2px ; ">
-                <a href="#" style=" text-decoration: none; color: black;">
-                  <h6 style="margin: 0;">Spicy noodles</h6>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <p style="color: red; margin: 0  ;">
+              <div style="margin-top: 2px 0px; ">
+                <a href="#" style=" text-decoration: none; color: black; margin: 0;">
+                  <h6 class="foodName">Spicy noodles</h6>
+                  <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star notChecked"></span>
+                    <span class="fa fa-star notChecked "></span>
+                  </div>
+                  <p class="dolar">
                     $
-                    <span style="font-weight: bold; font-size: 15px; color: rgba(0, 0, 0, 0.658); margin-bottom: 0px;">
+                    <span class="price">
                       18.00
                     </span>
                   </p>   
@@ -143,15 +150,17 @@
               </a>
               <div style="margin: 2px 0px; ">
                 <a href="#" style=" text-decoration: none; color: black; margin: 0;">
-                  <h6 style="margin: 0;">Vegetarian salad</h6>
+                  <h6 class="foodName">Vegetarian salad</h6>
+                      <div class="stars">
                       <span class="fa fa-star checked"></span>
                       <span class="fa fa-star checked"></span>
                       <span class="fa fa-star checked"></span>
                       <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star "></span>
-                    <p style="color: red; margin: 0;">
+                      <span class="fa fa-star notChecked "></span>
+                    </div>
+                    <p class="dolar">
                       $
-                      <span style="font-weight: bold; font-size: 15px; color: rgba(0, 0, 0, 0.658);">
+                      <span class="price">
                         23.00
                       </span>
                   </p>  
@@ -166,67 +175,58 @@
     <section id="secondPage">
 
       <div style="margin-top:1%; margin-bottom: 5%;">
-        <p style="color: #FF6868; font-size: 20px; font-weight: bold; font-family:'Courier New', Courier, monospace ;">Customer Favorites</p>
-        <h1 style="font-weight: bold; color: black; font-size: 50px;">Popular Catagories</h1>
+        <p id="customerFavorites">Customer Favorites</p>
+        <h1 id="popularCatagories">Popular Catagories</h1>
       </div>
       
       <div id="secondGrid">
 
         <button class="secondGridButton">
         <div >
-          <div class="test">
+          <div class="buttonImageAndBackground">
             <img src="media/background2.png" alt="background2.png" class="buttonBackground">
-            <img src="media/Main Dish.png" alt="Main Dish" class="secondFoodImages">
+            <img src="media/Main Dish.png" alt="Main Dish" id="img1" >
           </div>
-          <h3>Main Dish</h3>
-          <h5 style="margin-bottom: 25px; color: rgba(0, 0, 0, 0.749);">(86 dishes)</h5>
+          <h3  class="foodName2">Main Dish</h3>
+          <h5 class="catagoriesNum" >(86 dishes)</h5>
         </div>
       </button>
 
       <button class="secondGridButton">
         <div >
-          <div class="test">            
+          <div class="buttonImageAndBackground">            
             <img src="media/background2.png" alt="background2.png" class="buttonBackground">
             <img src="media/Break Fast.png" alt="Break Fast" id="img2">
           </div>
-          <h3>Break Fast</h3>
-          <h5 style="margin-bottom: 25px; color: rgba(0, 0, 0, 0.749);">(12 break fast)</h5>
+          <h3 class="foodName2">Break Fast</h3>
+          <h5 class="catagoriesNum" >(12 break fast)</h5>
         </div>
       </button>
 
 
       <button class="secondGridButton">
         <div >
-          <div class="test">            
+          <div class="buttonImageAndBackground">            
             <img src="media/background2.png" alt="background2.png" class="buttonBackground">
             <img src="media/Dessert.png" alt="Dessert" id="img3">
           </div>
-          <h3>Dessert</h3>
-          <h5 style="margin-bottom: 25px; color: rgba(0, 0, 0, 0.749);">(48 dessert)</h5>
+          <h3 class="foodName2">Dessert</h3>
+          <h5 class="catagoriesNum" >(48 dessert)</h5>
         </div>
       </button>
 
         <button class="secondGridButton">
           <div>
-            <div class="test">
+            <div class="buttonImageAndBackground">
               <img src="media/background2.png" alt="background2.png" class="buttonBackground">
               <img src="media/Browse All.png" alt="Browse All" id="img4">
             </div>
-            <h3>Browse All</h3>
-            <h5 style="margin-bottom: 25px; color: rgba(0, 0, 0, 0.749);">(255 Items)</h5>
+            <h3 class="foodName2">Browse All</h3>
+            <h5 class="catagoriesNum" >(255 Items)</h5>
           </div>
         </button>
         
-        
-        
-        
-
-      </div>
-      
-
-
-
-
+      </div>    
     </section>
 
 
