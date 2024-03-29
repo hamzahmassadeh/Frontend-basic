@@ -88,11 +88,19 @@ body{
     grid-template-columns: auto auto;
     gap: 10%;   
 }
+#content{
+    padding-bottom: 5%;
+    padding-top: 1%;
+}
 #leftGrid{
     margin-top: 1%  ;
 }
 #rightGrid{
     margin-top: 5% ;
+}
+#leftButtons{
+    display: flex;
+    /* margin: 0px ; */
 }
 #backgroundWomanImage{    
     position: absolute;
@@ -139,6 +147,8 @@ body{
     border-radius: 25px;
     text-align: center;
     text-decoration: none;
+    margin-left: 0;
+    margin-right: 2px;
     box-shadow: 0px 10px 11px rgba(145, 145, 235, 0.405);
 }
 .orderBut:hover{
@@ -181,6 +191,10 @@ body{
     border-radius: 20px;
     box-shadow: 0 4px 16px 16px rgba(0, 0, 0, 0.145), 0 2px 4px -1px rgba(0, 0, 0, 0.123);
 }
+.firstFoodImageContainer{
+    margin: auto auto;
+}
+
 .firstFoodImage{
     width: 70px;
     /* height: 70px; */
@@ -206,6 +220,7 @@ body{
     color: rgba(0, 0, 0, 0.658);
 }
 .foodName{
+    font-weight: bold;
     margin: 0;    
 }
 /***************************second grid***********************************/
@@ -252,10 +267,10 @@ body{
 #img2{
     position: absolute;
     width: 71px;
-    height: 67px;
+    /* height: 67px; */
     place-items: center;
     margin-left: -38px;
-    margin-top: 15px;
+    margin-top: 22px;
 }
 #img3{
     position: absolute;
