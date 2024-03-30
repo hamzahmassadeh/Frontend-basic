@@ -250,6 +250,122 @@
         margin-bottom: 11px; 
         color: rgba(0, 0, 0, 0.749);
     }
+    /***************************Third grid***********************************/
+
+    #thirdPageGridTopParagraphAndArrows{
+        display: ruby-text;
+    }
+    .standoutDishes{
+        font-weight: bold;
+        color: black; 
+        font-size: 25px;
+        text-align: left;
+        
+    }
+    #thirdPageGridTopArrows{
+        display: flex;
+        
+    }
+    #leftArrow{
+        padding: 10px;
+        border-radius: 50%;
+        margin: 0 35px;
+        border: none;
+        background-color: rgba(160, 159, 159, 0.304);
+    }
+    #rightArrow{
+        padding: 10px;
+        border-radius: 50%;
+        border: none;
+        background-color:#39DB4A;
+    }
+    #thirdPageGridButtons{
+        display: grid;
+        grid-template-columns: auto ;
+        gap: 10px;
+        margin: 10% auto;
+        border: none;
+        border-radius: 25px;
+    }
+    .itemButton{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        margin: auto auto;
+        padding-top: 0;
+        padding-bottom: 0px;
+        width: 180px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: none; 
+        border-radius: 8px;
+        color: black;
+        box-shadow: 0 4px 20px 8px rgba(0, 0, 0, 0.145), 0 2px 4px -1px rgba(0, 0, 0, 0.123);
+    }
+    .favoriteButton{
+        position: relative;
+        background-color:#39DB4A ;
+        padding: 2%;
+        border-radius: 0px 10px;
+        text-align: center;
+        width: 20px;
+        height: 25px;
+        left: 80px;
+        z-index: 1;
+    }
+    .check::before{
+        font-size: 11px;
+    }
+    .fa-heart{
+        color:white;
+    }
+    .thirdFoodImageContainer{
+        background-color: white;
+        border: none;
+        border-radius: 25px;
+        position: relative;
+        bottom: 25px;
+        height: 50px;
+    }
+    .foodImage2{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .foodName3{
+        text-align: left;
+        font-size: 8px;
+        font-weight: bold;
+    }
+    .foodName4{
+        text-align: left;
+        font-size: 6px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.533);
+    }
+    .dolar2{
+        color: red; 
+        font-size: 6px;
+        font-weight: bold;
+        margin: 0  ;
+        text-align: left;
+    }
+    .price2{
+        font-size: 8px;
+        font-weight: bold;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.658);
+    }
+    .ratingNumber{
+        font-size: 5px;
+        text-align: right;
+
+    }
+    .footerFavoriteButton{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 20px;
+        width: 100%;
+    }
 
 
 
