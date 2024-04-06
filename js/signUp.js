@@ -1,5 +1,9 @@
 var form = document.getElementsByClassName("form")[0];
-var inputName = document.getElementById('name');
+var firstName = document.getElementById('firstName');
+var lastName = document.getElementById('lastName');
+var userName = document.getElementById('userName');
+var gender = document.getElementById('gender');
+var phone = document.getElementById('phone');
 var email = document.getElementById('email');
 var password = document.getElementById('Password');
 var repeatPassword = document.getElementById('RepeatPassword');
@@ -9,14 +13,28 @@ form.addEventListener('submit', function(e){
     
     e.preventDefault();
     var signUpData ={
-        name: inputName.value,
+        firstName: firstName.value,
+        lastName: lastName.value,
+        userName: userName.value,
+        gender: gender.value,
+        phone: phone.value,
         email: email.value,
         password: password.value,
-        repeatPassword: repeatPassword.value
+        // repeatPassword: repeatPassword.value
     }
-    allData.push(signUpData);
+    if(password.value == repeatPassword.value ){
+        allData.push(signUpData);
+        localStorage.setItem('registrationData', JSON.stringify(allData));
+        console.log("Form submitted successfully:", signUpData);
+        localStorage.setItem('isLogIn', true);
+        alert("Welcome "+ userName.value);
+        window.location.href= "../index.html"
+        
 
-    localStorage.setItem('registrationData', JSON.stringify(allData));
-    console.log("Form submitted successfully:", signUpData);
+    }
+    else{
+        alert("password and repeatPassword are not the same :/")
+
+    }
     
 });

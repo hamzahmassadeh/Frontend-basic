@@ -1,4 +1,13 @@
+var profile = document.getElementById('profile');
+var isLogIn = JSON.parse(localStorage.getItem('isLogIn'));
+if (isLogIn == null || isLogIn == false){
+    window.location.href='pages/login.html';
+    profile.style.display = "none";
 
+}
+else{
+    console.log('isLogIn = true');
+}
 
 function fav(num){
 
