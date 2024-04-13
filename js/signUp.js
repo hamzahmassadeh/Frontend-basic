@@ -8,6 +8,10 @@ var email = document.getElementById('email');
 var password = document.getElementById('Password');
 var repeatPassword = document.getElementById('RepeatPassword');
 var allData = JSON.parse(localStorage.getItem('registrationData')) || [];
+var languageButton = document.getElementById('languageButton');
+var language = localStorage.getItem('language') || 'en';
+var html = document.getElementById('html');
+var SignUp = document.getElementById('SignUp');
 form.addEventListener('submit', function(e){
     e.preventDefault();
     var signUpData ={
@@ -58,3 +62,23 @@ form.addEventListener('submit', function(e){
         };
     }
 });
+
+languageSetting(language);
+
+languageButton.addEventListener('click', function () {
+    language = language === 'en' ? 'ar' : 'en';
+    localStorage.setItem('language', language);
+    languageSetting(language);
+});
+
+function languageSetting(lang) {
+    if (lang === 'ar') {
+        languageButton.innerHTML = 'en';
+        html.style.direction = 'rtl';
+        SignUp.innerHTML= 'تسجيل دخول';
+    } else {
+        languageButton.innerHTML = 'عربي';
+        html.style.direction = 'ltr';
+        SignUp.innerHTML= 'Sign up';
+    }
+}
