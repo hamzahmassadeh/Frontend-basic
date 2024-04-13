@@ -2,7 +2,6 @@ var isLogIn = JSON.parse(localStorage.getItem('isLogIn'));
 var logIn = document.getElementById('logIn');
 var signUp = document.getElementById('signUp');
 var logOutButton = document.getElementById('logOut');
-
 var registrationData = JSON.parse(localStorage.getItem('registrationData'));
 var fName = document.getElementById('fName');
 var lName = document.getElementById('lName');
@@ -11,10 +10,8 @@ var uPhone = document.getElementById('uPhone');
 var uGender = document.getElementById('uGender');
 var uEmail = document.getElementById('uEmail');
 var oPassword = document.getElementById('oPassword');
-
 var changePasswordForm = document.getElementById("changePasswordForm");
-
-
+var userKey = JSON.parse(localStorage.getItem('userKey'));
 
 if (isLogIn == null || isLogIn == false ){
     logIn.style.display= true ;
@@ -25,25 +22,22 @@ else {
     logIn.style.display= "none" ;
     signUp.style.display= "none";
     logOutButton.style.display = true;
-    // userData.innerHTML = JSON.stringify(registrationData[0]);
-
-    fName.innerHTML = registrationData[0].firstName;
-    lName.innerHTML = registrationData[0].lastName;
-    uName.innerHTML = registrationData[0].userName;
-    uPhone.innerHTML = registrationData[0].phone;
-    uGender.innerHTML = registrationData[0].gender;
-    uEmail.innerHTML = registrationData[0].email;
-    oPassword.innerHTML = registrationData[0].password;
-    
-
+    for(var i = 0 ; i<registrationData.length ; i++ ){
+        if(registrationData[i].userName == userKey){
+            fName.innerHTML = registrationData[i].firstName;
+            lName.innerHTML = registrationData[i].lastName;
+            uName.innerHTML = registrationData[i].userName;
+            uPhone.innerHTML = registrationData[i].phone;
+            uGender.innerHTML = registrationData[i].gender;
+            uEmail.innerHTML = registrationData[i].email;
+            oPassword.innerHTML = registrationData[i].password;
+        }
+    }
 }
-
 function logOut(){
-    // console.log('111111111111111111111');
     localStorage.setItem('isLogIn', false);
     window.location.href='../pages/login.html';
 }
-
 function changePassword(event){
     event.preventDefault();
     if (changePasswordForm.style.display === "none") {
@@ -65,7 +59,6 @@ changePasswordForm.addEventListener('submit', function(e){
             alert("Password changed successfully!");
             changePasswordForm.style.display = "none";
             oPassword.innerHTML = registrationData[0].password;
-
         }
         else{
             alert("password and confirm Password are not the same :/")
