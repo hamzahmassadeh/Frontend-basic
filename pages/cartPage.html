@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-left.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-right.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/cartPage.css">
+    <!-- <link rel="stylesheet" href="css/averageTabletMedia.css"> -->
+    <!-- <link rel="stylesheet" href="css/smallTabletMedia.css"> -->
+    <link rel="stylesheet" href="css/averageMobileMedia.css">
+    <!-- <link rel="stylesheet" href="css/smallMobileMedia.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+  <section id="navBar">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+          <div class="logo" >
+            <a  id="F" href="../index.html">
+              <img src="../media/F.png" alt="F"  >
+            </a>
+            <a  id="oodi" href="../index.html">
+              <img src="../media/oodi.png" alt="oodi"  >
+            </a>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: #39DB4A;">Home</a>
+              </li>
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle active" class="bi bi-chevron-down" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu   
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link active" href="../pages/profile.html" tabindex="-1" id="profile"> 
+                  <i class="fas fa-user-circle fa-lg me-3 fa-fw profile"></i>
+                  Profile</a>
+              </li>
+
+            </ul>
+            <form class="d-flex">
+                <a href="#" id="searchIcon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+                </a>
+                <a href="../pages/cartPage.html" id="bagIcon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                  </svg>
+                </a>
+                <a href="#" class="contactBut">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16" style="margin: 4%;">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                  </svg>
+                  contact
+                </a>
+            </form>
+          </div>
+        </div>      
+      </nav>
+</section>
+
+
+
+
+
+
+
+<section id="cart">
+  <form id="addForm">
+    <label for="meal">Choose a meal:</label><br>
+    <input type="radio" id="meal1" name="meal" value="meal1.jpg">
+    <label for="meal1"><img src="../media/Egg salad.png" alt="Meal 1"></label>
+
+    <input type="radio" id="meal2" name="meal" value="meal2.jpg">
+    <label for="meal2"><img src="../media/Fattoush salad.png" alt="Meal 2"></label>
+
+    <input type="radio" id="meal3" name="meal" value="meal3.jpg">
+    <label for="meal3"><img src="../media/Vegetable salad.png" alt="Meal 3"></label><br><br>
+
+    <label for="quantity">Quantity:</label>
+    <button type="button" id="decrement" >-</button>
+    <input type="text" id="quantity" value="1" readonly>
+    <button type="button" id="increment">+</button><br><br>
+
+    <label for="additionalItem">Choose an additional item:</label><br>
+    <input type="radio" id="item1" name="additionalItem" value="item1.jpg">
+    <label for="item1"><img src="../media/Browse All.png" alt="Item 1"></label>
+
+    <input type="radio" id="item2" name="additionalItem" value="item2.jpg">
+    <label for="item2"><img src="../media/Dessert.png" alt="Item 2"></label>
+
+    <!-- <input type="radio" id="item3" name="additionalItem" value="item3.jpg">
+    <label for="item3"><img src="../media/Egg salad.png" alt="Item 3"></label> -->
+    <br><br>
+
+    <label for="note">Note:</label><br>
+    <textarea id="note" rows="4" cols="50"></textarea><br><br>
+
+    <label for="deliveryDate">Delivery Date:</label>
+    <input type="date" id="deliveryDate">
+
+    <label for="deliveryTime">Delivery Time:</label>
+    <input type="time" id="deliveryTime"><br><br>
+
+    <button id="subButton" type="submit" class="formButton">Submit</button>
+  </form>
+
+  <div id="addCard"></div>
+</section>
+
+
+
+
+
+
+    
+
+    <script src="../js/cartPage.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
