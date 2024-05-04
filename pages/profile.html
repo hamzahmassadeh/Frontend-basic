@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="../css/profile.css">
     <!-- <link rel="stylesheet" href="css/averageTabletMedia.css"> -->
     <!-- <link rel="stylesheet" href="css/smallTabletMedia.css"> -->
-    <!-- <link rel="stylesheet" href="css/averageMobileMedia.css"> -->
-    <!-- <link rel="stylesheet" href="css/smallMobileMedia.css"> -->
+    <link rel="stylesheet" href="css/averageMobileMedia.css">
+    <link rel="stylesheet" href="css/smallMobileMedia.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -105,8 +105,8 @@
       </section>
 
       <section id="profileContainer">
-        <h1 style="color: white; text-align: center;">User Information</h1>
-        <hr style="color: white;">
+        <h1 style="color: black; text-align: center;">User Information</h1>
+        <hr style="color: black;">
         <form id="form">
           <p class="pTag">
             First Name: 
@@ -151,18 +151,19 @@
               ?
             </span>
           </p>
-          <button id="changePasswordButton" onclick="changePassword(event)">Change Password</button>
           
           
         </form>
+        <button id="changePasswordButton" onclick="changePassword()">Change Password</button>
+
         <form id="changePasswordForm">
           <hr>
           <div id="old">
-            <label for="password" class="pTag">Inter your current password please:</label>
+            <label for="password" class="pTag">Enter your current password please:</label>
             <input type="password" name="oldPassword" id="oldPassword" >
             <br>
             <br>
-            <label for="password" class="pTag">Inter your New password please:</label>
+            <label for="password" class="pTag">Enter your New password please:</label>
             <input type="password" name="oldPassword" id="newPassword" >
             <br>
             <br>

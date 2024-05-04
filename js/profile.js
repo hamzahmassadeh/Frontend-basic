@@ -13,6 +13,7 @@ var oPassword = document.getElementById('oPassword');
 var changePasswordForm = document.getElementById("changePasswordForm");
 var userKey = JSON.parse(localStorage.getItem('userKey'));
 
+
 if (isLogIn == null || isLogIn == false ){
     logIn.style.display= true ;
     signUp.style.display= true;
@@ -38,9 +39,12 @@ function logOut(){
     localStorage.setItem('isLogIn', false);
     window.location.href='../pages/login.html';
 }
-function changePassword(event){
-    event.preventDefault();
-    if (changePasswordForm.style.display === "none") {
+function changePassword(){
+    console.log("00000000000000000000")
+    // event.preventDefault();
+    if (changePasswordForm.style.display === "none" ||changePasswordForm.style.display === "" ) {
+    console.log("00000000000000000000")
+        
         changePasswordForm.style.display = "block";
     } else {
         changePasswordForm.style.display = "none";

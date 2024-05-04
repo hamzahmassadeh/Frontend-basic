@@ -1,6 +1,6 @@
 #profileContainer{
     text-align: left;
-    background-color: rgb(255, 99, 71);
+    background-color: rgb(230, 228, 217);
     padding: 20px;
     width: 50%;
     border-radius: 20px;
@@ -10,12 +10,12 @@ body{
     margin: auto auto;
 }
 .pTag{
-    color: white;
+    color: black;
     font-size: 20px;
     font-weight: bold;
 }
 .spanTag{
-    color: #00ff1a;
+    color: rgba(209, 81, 81, 0.81);
     text-decoration:solid;
 }
 #changePasswordButton{
@@ -29,4 +29,7 @@ body{
 }
 #changePasswordForm{
     display: none;
+}
+input{
+    font-size:60% ;
 }

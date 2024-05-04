@@ -30,7 +30,7 @@
         color: black;
     }
     .secondPar{
-        font-size: 13px;
+        font-size: 110%;
         margin-bottom: 10%;
         font-weight:bold ;
     }
@@ -41,7 +41,7 @@
         margin-left: 0;
         margin-right: 1%;
     }
-    #vidText{    
+    .vidText{    
         font-weight: bold; 
         font-size: 12px;
         margin-left: 2%;
@@ -157,15 +157,13 @@
 /* ****************************second page media ***************/
     #customerFavorites{
         color: #FF6868; 
-        font-size: 22px; 
+        font-size: 25px; 
         font-weight: bold; 
         font-family:'Courier New',Courier, monospace ;
         margin: 0;
     }
-    #popularCatagories{
-        font-weight: bold;
-        color: black; 
-        font-size: 35px;
+    .popularCatagories{
+        font-size: 25px;
     }
     #secondPage{
         margin: 8% auto;    
@@ -247,80 +245,46 @@
         color: rgba(0, 0, 0, 0.749);
     }
 /***************************Third grid***********************************/
-        #thirdPageGridTopParagraphAndArrows{
-        display: ruby-text;
-    }
     .standoutDishes{
-        font-weight: bold;
-        color: black; 
         font-size: 45px;
-        text-align: left;
-        
-    }
-    #thirdPageGridTopArrows{
-        display: flex;
-        
     }
     #leftArrow{
         padding: 18px;
         border-radius: 50%;
         margin: 0 35px;
-        border: none;
-        background-color: rgba(160, 159, 159, 0.304);
     }
     #rightArrow{
         padding: 18px;
         border-radius: 50%;
-        border: none;
-        background-color:#39DB4A;
     }
     #thirdPageGridButtons{
-        display: grid;
-        grid-template-columns: auto   ;
-        gap: 10px;
-        margin: 10% auto;
-        border: none;
-        border-radius: 25px;
+        gap: 5px;
+        border-radius: 20px;
     }
     .itemButton{
-        display: grid;
-        grid-template-rows: auto auto auto;
-        
-        margin: auto auto;
         padding-top: 0;
         padding-bottom: 10px;
-        width: 220px;
-        padding-left: 20px;
-        padding-right: 20px;
-        border: none; 
+        width: 160px;
+        padding-left: 10px;
+        padding-right: 10px;
         border-radius: 25px;
-        color: black;
-        background-color: white;
-        box-shadow: 0 4px 20px 8px rgba(0, 0, 0, 0.145), 0 2px 4px -1px rgba(0, 0, 0, 0.123);
     }
     .favoriteButton{
-        position: relative;
-        background-color:#39DB4A ;
         padding: 5%;
         border-radius: 0px 20px;
-        text-align: center;
         width: 40px;
         height: 35px;
-        left: 90px;
+        left: 60px;
         z-index: 1;
     }
     .check::before{
         font-size: 15px;
     }
     .fa-heart{
-        color:white;
         font-size: 12px;
     }
     .thirdFoodImageContainer{
-        background-color: white;
-        border: none;
         border-radius: 25px;
-        position: relative;
         bottom: 25px;
         height: 180px;
     }
@@ -330,41 +294,139 @@
         margin-bottom: 10px;
     }
     .foodName3{
-        text-align: left;
         font-size: 15px;
-        font-weight: bold;
     }
     .foodName4{
-        text-align: left;
         font-size: 13px;
-        font-weight: bold;
-        color: rgba(0, 0, 0, 0.533);
     }
     .dolar2{
-        color: red; 
         font-size: 12px;
-        font-weight: bold;
         margin: 0  ;
-        text-align: left;
     }
     .price2{
         font-size: 18px;
-        font-weight: bold;
-        text-align: left;
-        color: rgba(0, 0, 0, 0.658);
     }
     .ratingNumber{
         font-size: 12px;
-        text-align: right;
-
     }
     .footerFavoriteButton{
-        display: grid;
-        grid-template-columns: auto auto;
         width: 100%;
     }
+/***************************Forth grid***********************************/
+     #forthGrid{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 15px;
+    }
+    #chefImage{
+        width: 210px;
+    }
+    .Mask_group{
+        position: relative;
+        z-index: 0;
+        width: 40px;
+    }
+    .Mask_group1{
+        position: relative;
+        z-index: 1;
+        right: 18px;
+        width: 40px;
+    }
+    .Mask_group2{
+        position: relative;
+        z-index: 1;
+        right: 33px;
+        width: 40px;
 
+    }
+    .standoutDishes2{
+        font-size: 25px;
+    }
+    .checked2::before{
+        font-size: 9px;
+    }
+    .text1{
+        font-weight: bold;
+        font-size: 11px;
+    }
+/***************************Fifth grid***********************************/
+    #fifthGrid{
+        gap: 10px;
+        margin: 10% auto;
+    }
+    #leftFifthPage{
+        gap: 20px;
+    }
+    .leftFifthPageButton1{
+        width: 110px;
+        height: 130px;
+        padding: 5px 5px;
+    }
+    .FifthPageImage1{
+        width: 20px;
+        margin-bottom: 6px;
+        margin-top: 6px;
+    }
+    .text2{
+        font-size: 11px;
+    }
+    .fifthPageDescription{
+        font-size: 9px;
+    }
+/***************************Footer1 grid***********************************/
+    #footerGrid{
+        gap: 10px;
+        margin: 10% auto;
+    }
+    #FLogo{
+        border-radius: 7px;
+        padding: 5px;
+        width: 20px;
+    }
+    #oodiLogo{
+        width: 40px;
+    }
+    .footerGridLinks{
+        margin-bottom: 10px;
+        font-size: 13px; 
+    }
+
+/***************************Footer2 grid***********************************/
+    #footerGrid2{
+        gap: 5px;
+        margin: 2% auto;
+    }
+    .socialMediaLink{
+        padding: 8px 8px;
+        margin: 10px;
+    }
+    .socialMediaLink1{
+        padding: 8px 8px;
+        margin: 10px;
+    }
+    .socialMediaLink2{
+        padding: 8px 8px;
+        margin: 10px;
+    }
+    .socialMediaLink3{
+        padding: 8px 8px;
+        margin: 10px;
+    }
+    .socialMediaImage{
+        margin: auto auto;
+        width: 12px;
+    }
+    #footer2gridContent{
+        text-align: center;
+    }
+    .secondPar2{
+        font-size: 12px;
+        margin-bottom: 0%;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.741);
+        text-align: center;
+    }
 }
     
 
- 
+    
